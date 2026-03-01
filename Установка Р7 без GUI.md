@@ -167,140 +167,153 @@ $ sudo -i
 # chmod +x offline-installer.sh
 # ./offline-installer.sh
 ```
+![image](https://github.com/user-attachments/assets/caa684ee-d0b8-4618-bad7-ab36eda8d02b)
 
-![image](https://github.com/user-attachments/assets/a3f7c38e-fc38-46b6-94fe-16cac330c3fb)
+<hr>
 
-Чистая установка.
+<img width="603" height="201" alt="image" src="https://github.com/user-attachments/assets/dc602a12-ffdb-4391-bbf6-6d2051e54af1" />
+
+Чистая установка
 
 Если требуется выполнить чистую установку (удалит имеющуюся инсталляцию Корпоративный сервер 2024 и зависимости):
 
-Выберите. Да
+Выберите Да
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/4fd55bad-acb9-49ce-9985-ac0f43881b55)
+<img width="601" height="200" alt="2" src="https://github.com/user-attachments/assets/ba377d19-49d5-4821-84d8-87f4b5841fd3" />
  
-Установка СУБД на локальную ВМ.
+Установка СУБД на локальную ВМ
 
 Для установки PostgreSQL (при инсталляции всё в одном) на локальный компьютер:
 
-Выберите. Да
+Выберите Да
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/df64e74e-0c34-44ac-b978-a05e56fc5651)
+<img width="599" height="200" alt="3" src="https://github.com/user-attachments/assets/4218f9f4-177d-447d-a976-af83b2eafbf6" />
 
-Установка Сервера Документов.
+Установка Сервера Документов
 
-Для его установки: Выберите. Да
+Для его установки: Выберите Да
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/1f24f651-b632-41cd-a803-e88a3d79db7c)
-
+<img width="602" height="200" alt="4" src="https://github.com/user-attachments/assets/e3b6a232-e07f-42d7-87b0-a278a64931c3" />
 
 Необходимо ввести пароль-секрет для защищённого доступа между Корпоративный сервер 2024 и Сервером Документов.
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/551af633-bb6e-45c1-88cb-516a0f4067bd)
+<img width="597" height="198" alt="5" src="https://github.com/user-attachments/assets/63603451-85eb-48bd-b5b7-492538b4b5db" />
 
 
-Пароль для Базы Данных DS.
-
-<hr>
-
-![image](https://github.com/user-attachments/assets/ca77e6dc-0bb6-4bc0-99b5-33879d15d8f5)
-
-Установка api и web диска.
-
-Для его установки: Выберите. Да
+Пароль для Базы Данных DS
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/961ab686-f66b-449e-bee2-fa8d581b6e58)
+<img width="599" height="198" alt="6" src="https://github.com/user-attachments/assets/bd2cf086-19e1-4706-9974-7c442186251c" />
 
-Тип СУБД Корпоративный сервер 2024.
+
+Установка api и web диска
+
+Для его установки: Выберите Да
+
+<hr>
+
+<img width="599" height="298" alt="7" src="https://github.com/user-attachments/assets/e09d26da-ab7e-4df5-8493-ab8ccbda422b" />
+
+
+Тип СУБД Корпоративный сервер 2024
 
 Выберите PostgreSQL
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/2851b0be-5601-41a8-9546-660536d10d7a)
+<img width="611" height="208" alt="8" src="https://github.com/user-attachments/assets/470ff17f-faef-4d7e-9dff-c82b962b5d6d" />
 
-Создание БД. Выберите. Да
+
+Создание БД. Выберите Да
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/e53b957e-ffd4-4f72-837c-15c8e15ffca8)
+<img width="604" height="204" alt="9" src="https://github.com/user-attachments/assets/2b344f76-383f-4540-b8ca-d8e8caf9a19e" />
+
 
 Хост СУБД
 
-При локальной установки. Выберите. Ок
+При локальной установки. Выберите Ок
 
 >[!Warning]
 >Если СУБД установлена отдельно, укажите ip или имя хоста
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/efb59610-5587-4b89-881c-68e17bb8f46c)
+<img width="612" height="206" alt="10" src="https://github.com/user-attachments/assets/ae9f5a21-ce4d-4da7-8303-569d5799ef03" />
+
 
 По умолчанию 5432 используется. Если настроен другой, указать его. Оставляем как есть.
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/5d8652cd-4b91-42a7-85d0-6598c6d04f99)
+<img width="600" height="199" alt="11" src="https://github.com/user-attachments/assets/a5a91ca5-1971-44a7-920b-b3afb76c0e58" />
 
-Пользователь с правами создания БД и пользователей.
+
+Пользователь с правами создания БД и пользователей
 
 По умолчанию ccdisk
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/50516ca5-1416-4627-b177-17797cef2dff)
+<img width="604" height="206" alt="12" src="https://github.com/user-attachments/assets/8a9be3b2-3132-4646-a107-fe9947369f39" />
 
-Пароль пользователя с правами создания БД и пользователя ccdisk.
 
-<hr>
-
-![image](https://github.com/user-attachments/assets/2338b1fd-8a30-4e90-93b5-5976a0f822f2)
-
-Пароль для пользователя БД Корпоративный сервер 2024.
-
-Укажите пароль для пользователя cddisk.
+Пароль пользователя с правами создания БД и пользователя ccdisk
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/75e1d240-bfc7-4ca1-9121-0ab0c0434631)
+<img width="621" height="233" alt="13" src="https://github.com/user-attachments/assets/62e7cdd4-02a8-4398-9750-c81bae2035e5" />
 
-coremachinkey от CS.
 
-Изменить на актуальный, если есть Р7-Офис Корпоративный сервер и нажмите ОК, если нет, нажмите Ок без редактирования.
+Пароль для пользователя БД Корпоративный сервер 2024
+
+Укажите пароль для пользователя cddisk
+
+<hr>
+
+<img width="631" height="234" alt="14" src="https://github.com/user-attachments/assets/d4f96d4f-c4f2-4e7c-9805-eb14e7575be9" />
+
+
+coremachinkey от CS
+
+Изменить на актуальный, если есть Р7-Офис Корпоративный сервер и нажмите ОК, если нет, нажмите Ок без редактирования
 
 нажмите Ок
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/eeb7efb0-bef6-4b9c-8681-93b390253895)
+<img width="602" height="203" alt="image" src="https://github.com/user-attachments/assets/637e435b-a010-4d7e-8259-047ec2fcda0f" />
 
 >[!Warning]
 >Если Вы выбрали установки без HTTPS, то, после инсталляции, почтовый сервер работать не будет. Он не запустится.
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/f84b01c3-e939-4a99-be2d-d167faaec63c)
+<img width="605" height="205" alt="15" src="https://github.com/user-attachments/assets/fe61163e-5696-4b4d-8a78-e25006facfd4" />
 
-Укажите домен. Необходимо указать домен, в котором у Вас созданы записи.
+
+Укажите домен. Необходимо указать домен, в котором у Вас созданы записи
 
 Например, it.company.lan
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/66be4d92-4f9d-4209-87bf-a61562ce9f6c)
+<img width="606" height="204" alt="16" src="https://github.com/user-attachments/assets/12787eb0-c4e8-4fe6-9e66-2d8298461330" />
 
-Префикс Р7-Диск.
 
-Указать имя, которое будет открываться в браузере для веб р7-Диска.
+Префикс Р7-Диск
+
+Указать имя, которое будет открываться в браузере для веб р7-Диска
 
 Например, если Вы хотите, чтобы открылся Р7-Диск по адресу cdisk.it.company.lan, то указать нужно именно cdisk, без указания домена.
 
@@ -308,9 +321,10 @@ coremachinkey от CS.
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/b59d6e51-4f55-464a-bb56-5085017c1fc2)
+<img width="605" height="206" alt="17" src="https://github.com/user-attachments/assets/4607d0b4-bfb9-4c73-a009-065350a7b804" />
 
-Префикс Р7-Админ.
+
+Префикс Р7-Админ
 
 Указать имя, которое будет открываться в браузере для веб админской панели.
 
@@ -320,9 +334,10 @@ coremachinkey от CS.
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/753c4eb6-0801-4e24-91c8-edfeaae3a5eb)
+<img width="603" height="201" alt="18" src="https://github.com/user-attachments/assets/3c4c8c6d-1c30-4d8c-b11b-a4471bc1a9e4" />
 
-Префикс Р7-Контакты.
+
+Префикс Р7-Контакты
 
 Указать имя, которое будет открываться в браузере для веб клиента контактов.
 
@@ -332,9 +347,10 @@ coremachinkey от CS.
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/40ba1167-8e99-40dd-b440-ebda9a94799e)
+<img width="602" height="201" alt="19" src="https://github.com/user-attachments/assets/36bd439c-c4af-4cec-8440-c0efa6d2737c" />
 
-Префикс Р7-Почта.
+
+Префикс Р7-Почта
 
 Указать имя, которое будет открываться в браузере для веб клиента почты.
 
@@ -344,9 +360,10 @@ coremachinkey от CS.
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/9415ae9e-2b7b-438e-8bcb-8a4b74946558)
+<img width="606" height="209" alt="20" src="https://github.com/user-attachments/assets/2fc3b474-d5fa-40c2-830c-cab2e0d34251" />
 
-Префикс Р7-Почта.
+
+Префикс Р7-Почта
 
 Указать имя, которое будет открываться в браузере для веб клиента почты.
 
@@ -356,9 +373,10 @@ coremachinkey от CS.
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/4bdbbe02-4d4b-4fa2-ab72-f08ebbdcb47d)
+<img width="603" height="203" alt="21" src="https://github.com/user-attachments/assets/30150f6b-0059-4516-92ba-dfa80f2390d1" />
 
-Префикс Р7-Календарь.
+
+Префикс Р7-Календарь
 
 Укажите имя, которое будет открываться в браузере для веб календаря.
 
@@ -368,9 +386,10 @@ coremachinkey от CS.
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/2f42133d-8ec8-4d67-86d9-8a73e9b7e166)
+<img width="599" height="198" alt="22" src="https://github.com/user-attachments/assets/1eee1676-f0cb-408f-9776-bf001bb328f4" />
 
-Префикс Р7-Сервер Документов.
+
+Префикс Р7-Сервер Документов
 
 Указать имя, которое будет открываться в браузере для веба сервера документом.
 
@@ -382,31 +401,35 @@ coremachinkey от CS.
 
 ### 3. Установка почтового сервера R7.
 
-![image](https://github.com/user-attachments/assets/7a5864f9-55a1-41a3-85d3-2e086d5960a0)
+<img width="603" height="199" alt="23" src="https://github.com/user-attachments/assets/bcc57017-9477-420b-b2dc-2415bc1061e8" />
+
 
 Установка почтового сервера - ДА
 
 ---
 
-![image](https://github.com/user-attachments/assets/384e52b1-47b3-4b56-b9d7-ea2ab735353c)
+<img width="600" height="292" alt="24" src="https://github.com/user-attachments/assets/a4e5b28c-5746-4aa3-a1f6-d5f5b69543a0" />
+
 
 Выберите базу данных для установки.
 
 ---
 
-![image](https://github.com/user-attachments/assets/7c186766-c1a5-450a-b2bd-fed838bb031c)
+<img width="602" height="200" alt="25" src="https://github.com/user-attachments/assets/1a862468-36cc-4035-88d7-449750df5b88" />
+
 
 В данном окне надо внести имя вашего MX почтового сервера, который прописан в записи А на контроллере домена. 
 
-В моём случае запись А в DNS такая ``A  r7mx1.it.company.lan  TTL``.
+В моём случае запись А в DNS такая ``A  r7mx1.it.company.lan  TTL``
 
-Если MX запись выглядит, как ``r7mx1.it.company.lan``, то ввести необходимо просто hostname почтового сервера **r7mx1**.
+Если MX запись выглядит, как r7mx1.it.company.lan, то ввести необходимо просто hostname почтового сервера **r7mx1**
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/84aeb3b3-b18f-45fa-9db8-88dccae1f1aa)
+<img width="606" height="195" alt="26" src="https://github.com/user-attachments/assets/0fd8c74c-f00f-4fda-bcfc-2b7eaa1fb43c" />
 
-Укажите ip адрес.
+
+Укажите ip адрес
 
 Укажите внешний ip адрес сервера, для корректной работы почтового сервера.
 
@@ -414,29 +437,34 @@ coremachinkey от CS.
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/61ee719d-51e6-406a-a17d-e23adf49774d)
+<img width="605" height="199" alt="27" src="https://github.com/user-attachments/assets/2b3d2b6f-3e0d-4b0c-a09a-439da949ed46" />
 
-Пароль root для Postgresql.
 
-Укажите пароль, который будет задан пользователю root Postgresql.
+Пароль root для Postgresql
 
-<hr>
-
-![image](https://github.com/user-attachments/assets/6c8fdf01-d493-4fbb-99e2-4b56596f149d)
-
-Установка SpamAssassin.
-
-Если требуется установка.
-
-Выберите 1.
+Укажите пароль, который будет задан пользователю root Postgresql
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/32a3af30-3c02-43f5-aabb-90ed074ee08a)
+<img width="609" height="307" alt="28" src="https://github.com/user-attachments/assets/d981e10d-fb78-4d1c-ac8f-58f5721cc20f" />
 
-Установка OpenDKIM.
 
-Если требуется установка. Выберите. Да
+Установка SpamAssassin
+
+Если требуется установка
+
+Выберите 1
+
+<hr>
+
+<img width="604" height="197" alt="29" src="https://github.com/user-attachments/assets/a58089cd-9974-42e8-a134-b4d332675c63" />
+
+
+Установка OpenDKIM
+
+Если требуется установка. Выберите Да
+
+
 
 <hr>
 
@@ -509,6 +537,7 @@ DKIM-запись хранится в DNS домена в формате TXT-з�
 - Настройка API.md
 - Установка Органайзера.md
 - Установка модуля графики.md
+
 
 
 
