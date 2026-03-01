@@ -515,19 +515,22 @@ coremachinkey от CS
 
 ### 3. Установка почтового сервера R7.
 
-![image](https://github.com/user-attachments/assets/a25c4ad1-94c2-4995-a5cd-4fecf3de316d)
+<img width="603" height="199" alt="23" src="https://github.com/user-attachments/assets/bcc57017-9477-420b-b2dc-2415bc1061e8" />
+
 
 Установка почтового сервера - ДА
 
 ---
 
-![image](https://github.com/user-attachments/assets/609df310-f84f-45ce-ae68-dd27454c3a5d)
+<img width="600" height="292" alt="24" src="https://github.com/user-attachments/assets/a4e5b28c-5746-4aa3-a1f6-d5f5b69543a0" />
+
 
 Выберите базу данных для установки.
 
 ---
 
-![image](https://github.com/user-attachments/assets/9a690a18-2476-4aa7-b307-453becec49da)
+<img width="602" height="200" alt="25" src="https://github.com/user-attachments/assets/1a862468-36cc-4035-88d7-449750df5b88" />
+
 
 В данном окне надо внести имя вашего MX почтового сервера, который прописан в записи А на контроллере домена. 
 
@@ -537,7 +540,8 @@ coremachinkey от CS
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/75998f41-5961-4fe5-ae77-b3eaa6f90573)
+<img width="606" height="195" alt="26" src="https://github.com/user-attachments/assets/0fd8c74c-f00f-4fda-bcfc-2b7eaa1fb43c" />
+
 
 Укажите ip адрес
 
@@ -547,7 +551,8 @@ coremachinkey от CS
 
 <hr>
 
-![43](https://github.com/user-attachments/assets/396395fb-010e-4b6d-8c33-a9d1c7243f25)
+<img width="605" height="199" alt="27" src="https://github.com/user-attachments/assets/2b3d2b6f-3e0d-4b0c-a09a-439da949ed46" />
+
 
 Пароль root для Postgresql
 
@@ -555,7 +560,8 @@ coremachinkey от CS
 
 <hr>
 
-![44](https://github.com/user-attachments/assets/e0cb49e9-6577-422a-b485-954d502aea6e)
+<img width="609" height="307" alt="28" src="https://github.com/user-attachments/assets/d981e10d-fb78-4d1c-ac8f-58f5721cc20f" />
+
 
 Установка SpamAssassin
 
@@ -565,7 +571,8 @@ coremachinkey от CS
 
 <hr>
 
-![45](https://github.com/user-attachments/assets/6c0ebd51-4130-436e-92f9-d9af2ddc4be9)
+<img width="604" height="197" alt="29" src="https://github.com/user-attachments/assets/a58089cd-9974-42e8-a134-b4d332675c63" />
+
 
 Установка OpenDKIM
 
@@ -632,6 +639,7 @@ https:/admin.it.company.lan
 - Настройка API.md
 - Установка Органайзера.md
 - Установка модуля графики.md
+
 
 
 
