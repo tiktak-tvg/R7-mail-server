@@ -295,7 +295,7 @@ chmod +x offline_installer.sh
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/9637b5a5-3114-486a-9dba-18c67441ba18)
+<img width="601" height="200" alt="2" src="https://github.com/user-attachments/assets/ba377d19-49d5-4821-84d8-87f4b5841fd3" />
  
 Установка СУБД на локальную ВМ
 
@@ -305,7 +305,7 @@ chmod +x offline_installer.sh
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/878632c3-5ad9-445a-a670-3599e0723062)
+<img width="599" height="200" alt="3" src="https://github.com/user-attachments/assets/4218f9f4-177d-447d-a976-af83b2eafbf6" />
 
 Установка Сервера Документов
 
@@ -313,19 +313,21 @@ chmod +x offline_installer.sh
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/42f7d7f0-3b6a-494b-a527-a15b7246c2b6)
+<img width="602" height="200" alt="4" src="https://github.com/user-attachments/assets/e3b6a232-e07f-42d7-87b0-a278a64931c3" />
 
 Необходимо ввести пароль-секрет для защищённого доступа между Корпоративный сервер 2024 и Сервером Документов.
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/2237c1d7-2c86-4491-ae5f-bea349f658cd)
+<img width="597" height="198" alt="5" src="https://github.com/user-attachments/assets/63603451-85eb-48bd-b5b7-492538b4b5db" />
+
 
 Пароль для Базы Данных DS
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/7cce156d-c595-45fe-b81f-47d202d8555b)
+<img width="599" height="198" alt="6" src="https://github.com/user-attachments/assets/bd2cf086-19e1-4706-9974-7c442186251c" />
+
 
 Установка api и web диска
 
@@ -333,7 +335,8 @@ chmod +x offline_installer.sh
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/0135cee8-32f3-446d-91df-b1ca94db8e9a)
+<img width="599" height="298" alt="7" src="https://github.com/user-attachments/assets/e09d26da-ab7e-4df5-8493-ab8ccbda422b" />
+
 
 Тип СУБД Корпоративный сервер 2024
 
@@ -341,13 +344,15 @@ chmod +x offline_installer.sh
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/3f5778a3-0834-4aa3-a11d-a182a9bb3aa8)
+<img width="611" height="208" alt="8" src="https://github.com/user-attachments/assets/470ff17f-faef-4d7e-9dff-c82b962b5d6d" />
+
 
 Создание БД. Выберите Да
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/83f23eaf-2540-4dca-a145-1d2c7066b182)
+<img width="604" height="204" alt="9" src="https://github.com/user-attachments/assets/2b344f76-383f-4540-b8ca-d8e8caf9a19e" />
+
 
 Хост СУБД
 
@@ -614,6 +619,7 @@ https:/admin.it.company.lan
 - Настройка API.md
 - Установка Органайзера.md
 - Установка модуля графики.md
+
 
 
 
