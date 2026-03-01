@@ -498,6 +498,7 @@ coremachinkey от CS
 ### 3. Установка почтового сервера R7.
 
 ![image](https://github.com/user-attachments/assets/a25c4ad1-94c2-4995-a5cd-4fecf3de316d)
+<img width="602" height="203" alt="image" src="https://github.com/user-attachments/assets/4f26e6b8-ea4e-4b68-b68e-04609c95562c" />
 
 Установка почтового сервера - ДА
 
@@ -614,4 +615,5 @@ https:/admin.it.company.lan
 - Настройка API.md
 - Установка Органайзера.md
 - Установка модуля графики.md
+
 
