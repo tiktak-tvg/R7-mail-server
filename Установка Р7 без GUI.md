@@ -479,15 +479,28 @@ DKIM-запись хранится в DNS домена в формате TXT-з�
 
 **Перезагружаем севрвер**
 
-Проверяем работу службы ``rabbitmq``.
+Проверяем работу служб
+```bash
+supervisorctl status
+cddisk:api                       RUNNING   pid 1760, uptime 3:26:14
+cddisk:apisso                    RUNNING   pid 1765, uptime 3:26:14
+cddisk:filestorage               RUNNING   pid 1761, uptime 3:26:14
+cddisk:processing                RUNNING   pid 1762, uptime 3:26:14
+cddisk:registry                  RUNNING   pid 1764, uptime 3:26:14
+cddisk:searchapi                 RUNNING   pid 1763, uptime 3:26:14
 
-![image](https://github.com/user-attachments/assets/3672e338-7388-4579-9480-13eba974e74d)
+systemctl status --no-pager supervisor.service; nginx -t; supervisorctl status; systemctl status --no-pager rabbitmq-server.service
 
+systemctl restart nginx.service --no-pager; supervisorctl restart all --no-pager; systemctl restart --no-pager rabbitmq-server.service
+
+systemctl status nginx ds-converter.service ds-docservice.service ds-metrics.service
+
+```
 Обратно раскомментируем шлюз и репозитории.
 
-![image](https://github.com/user-attachments/assets/228cff78-e77b-4ff6-8ead-7fe020f835c9)
 
-![image](https://github.com/user-attachments/assets/815645a7-c5d9-4f2e-b576-48b409844458)
+<img width="1278" height="210" alt="image" src="https://github.com/user-attachments/assets/6dacfc31-cd1d-4541-af8c-089edff85991" />
+
 
 ### 4. Настройка почтового сервера Р7.
 
@@ -537,6 +550,7 @@ DKIM-запись хранится в DNS домена в формате TXT-з�
 - Настройка API.md
 - Установка Органайзера.md
 - Установка модуля графики.md
+
 
 
 
