@@ -269,16 +269,29 @@ update-ca-certificates --fresh
 
 
 ### 2. Установка необходимых служб и баз данных для почтового сервера 2024 offline-версии.
+
+Из папки в которой создали сертификаты /mnt/CDDiskPack/CDinstall_Astra_1.7.4/sslcert/#
+
+переходим cd .. и проваливаемся в корень CDinstall_Astra_1.7.4
 ```bash
-из папки в которой создали сертификаты /mnt/CDDiskPack/CDinstall_Astra_1.7.4/sslcert/#
-переходим 
-cd ..
-проваливаемся
 /mnt/CDDiskPack/CDinstall_Astra_1.7.4/#
-смотрим что в папке скрипт присутствует  ls -l
-даём права на выполнение его
-chmod +x offline_installer.sh
+```
+смотрим что в папке скрипт присутствует  ls -l и даём права на выполнение его
+```bash
+/mnt/CDDiskPack/CDinstall_Astra_1.7.4/# chmod +x offline_installer.sh
+```
 запускаем
+```bash
+sed -i '2i \
+if systemctl list-unit-files | grep -q rabbitmq-server.service; then \
+    echo "-------------------------------------------------------" \
+    echo "КРИТИЧЕСКАЯ ОШИБКА: RabbitMQ обнаружен на этом сервере." \
+    echo "Скрипт остановлен во избежание конфликтов." \
+    echo "-------------------------------------------------------" \
+    exit 1 \
+fi' offline_installer.sh
+
+chmod +x offline_installer.sh 
 ./offline_installer.sh
 ```
 ![image](https://github.com/user-attachments/assets/caa684ee-d0b8-4618-bad7-ab36eda8d02b)
@@ -639,6 +652,7 @@ https:/admin.it.company.lan
 - Настройка API.md
 - Установка Органайзера.md
 - Установка модуля графики.md
+
 
 
 
