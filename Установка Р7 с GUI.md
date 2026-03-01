@@ -285,7 +285,7 @@ chmod +x offline_installer.sh
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/986d1e7b-d33f-4234-8fd7-aed5e9451eda)
+<img width="603" height="201" alt="image" src="https://github.com/user-attachments/assets/dc602a12-ffdb-4391-bbf6-6d2051e54af1" />
 
 Чистая установка
 
@@ -614,6 +614,7 @@ https:/admin.it.company.lan
 - Настройка API.md
 - Установка Органайзера.md
 - Установка модуля графики.md
+
 
 
 
