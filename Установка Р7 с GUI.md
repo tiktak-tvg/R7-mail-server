@@ -363,13 +363,15 @@ chmod +x offline_installer.sh
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/84e27862-4db4-4d62-a272-eaa53aa900d3)
+<img width="612" height="206" alt="10" src="https://github.com/user-attachments/assets/ae9f5a21-ce4d-4da7-8303-569d5799ef03" />
+
 
 По умолчанию 5432 используется. Если настроен другой, указать его. Оставляем как есть.
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/b8b03d01-4e58-46ef-ac1d-cb19e0719d60)
+<img width="600" height="199" alt="11" src="https://github.com/user-attachments/assets/a5a91ca5-1971-44a7-920b-b3afb76c0e58" />
+
 
 Пользователь с правами создания БД и пользователей
 
@@ -377,13 +379,15 @@ chmod +x offline_installer.sh
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/10eff70d-b8db-421e-ad40-69772b77fa5d)
+<img width="604" height="206" alt="12" src="https://github.com/user-attachments/assets/8a9be3b2-3132-4646-a107-fe9947369f39" />
+
 
 Пароль пользователя с правами создания БД и пользователя ccdisk
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/5afb9ace-7c43-48b1-83ce-22cd7e17e2ed)
+<img width="621" height="233" alt="13" src="https://github.com/user-attachments/assets/62e7cdd4-02a8-4398-9750-c81bae2035e5" />
+
 
 Пароль для пользователя БД Корпоративный сервер 2024
 
@@ -391,7 +395,8 @@ chmod +x offline_installer.sh
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/2f2e3341-85de-458d-8aac-40ca5e562733)
+<img width="631" height="234" alt="14" src="https://github.com/user-attachments/assets/d4f96d4f-c4f2-4e7c-9805-eb14e7575be9" />
+
 
 coremachinkey от CS
 
@@ -408,7 +413,8 @@ coremachinkey от CS
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/ae23bfe7-4777-4147-ae3a-4776c64e94a2)
+<img width="605" height="205" alt="15" src="https://github.com/user-attachments/assets/fe61163e-5696-4b4d-8a78-e25006facfd4" />
+
 
 Укажите домен. Необходимо указать домен, в котором у Вас созданы записи
 
@@ -416,7 +422,8 @@ coremachinkey от CS
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/6aba3925-df9e-4c4b-ba06-c5dd15954b0d)
+<img width="606" height="204" alt="16" src="https://github.com/user-attachments/assets/12787eb0-c4e8-4fe6-9e66-2d8298461330" />
+
 
 Префикс Р7-Диск
 
@@ -428,7 +435,8 @@ coremachinkey от CS
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/64ec3ab8-8845-4765-bdf5-59e5af56220d)
+<img width="605" height="206" alt="17" src="https://github.com/user-attachments/assets/4607d0b4-bfb9-4c73-a009-065350a7b804" />
+
 
 Префикс Р7-Админ
 
@@ -440,7 +448,8 @@ coremachinkey от CS
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/b7bfadab-6d3f-4f86-aa85-b9e1306ff9cf)
+<img width="603" height="201" alt="18" src="https://github.com/user-attachments/assets/3c4c8c6d-1c30-4d8c-b11b-a4471bc1a9e4" />
+
 
 Префикс Р7-Контакты
 
@@ -452,7 +461,8 @@ coremachinkey от CS
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/8135dcfa-eaae-46f7-bb11-27517b0ea0a3)
+<img width="602" height="201" alt="19" src="https://github.com/user-attachments/assets/36bd439c-c4af-4cec-8440-c0efa6d2737c" />
+
 
 Префикс Р7-Почта
 
@@ -464,7 +474,8 @@ coremachinkey от CS
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/02f3207b-6504-493e-a376-f533b36afa0f)
+<img width="606" height="209" alt="20" src="https://github.com/user-attachments/assets/2fc3b474-d5fa-40c2-830c-cab2e0d34251" />
+
 
 Префикс Р7-Почта
 
@@ -476,7 +487,8 @@ coremachinkey от CS
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/8a648089-4a26-41d2-ba66-47a275ab64cc)
+<img width="603" height="203" alt="21" src="https://github.com/user-attachments/assets/30150f6b-0059-4516-92ba-dfa80f2390d1" />
+
 
 Префикс Р7-Календарь
 
@@ -488,7 +500,8 @@ coremachinkey от CS
 
 <hr>
 
-![image](https://github.com/user-attachments/assets/a3bc029d-20b3-4918-860b-77c4556ccbef)
+<img width="599" height="198" alt="22" src="https://github.com/user-attachments/assets/1eee1676-f0cb-408f-9776-bf001bb328f4" />
+
 
 Префикс Р7-Сервер Документов
 
@@ -619,6 +632,7 @@ https:/admin.it.company.lan
 - Настройка API.md
 - Установка Органайзера.md
 - Установка модуля графики.md
+
 
 
 
