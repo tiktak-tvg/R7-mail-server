@@ -21,7 +21,8 @@
 
 Открываем репозитории `` nano /etc/apt/sources.list``
 
-![image](https://github.com/user-attachments/assets/a9342a3c-bdbd-44fb-8f90-19b6b16f4065)
+<img width="1278" height="210" alt="image" src="https://github.com/user-attachments/assets/26437219-ce37-4ca5-85d4-f40563ca7bf3" />
+
 ```bash
 apt install open-vm-tools
 ```
@@ -613,3 +614,4 @@ https:/admin.it.company.lan
 - Настройка API.md
 - Установка Органайзера.md
 - Установка модуля графики.md
+
