@@ -20,16 +20,20 @@
 [Скачать плагин](https://download.r7-office.ru/plugin/plugin-mail-astra174.zip)
 <br>MD5: 74644B456277E21F52D7DD51516BFA74
 
-Обновление API
-Для обновления API Почтового сервера до версии 1.4:
-1. Скопировать архив mailserver_api_1.4.tar в корень /
+Обновление API<br>
+Для обновления API Почтового сервера до версии 1.4:<br>
+1. Скопировать архив mailserver_api_1.4.tar в корень / <br>
 2. Остановить службу и удалить директорию с предыдущей версией API
+```bash
 systemctl stop mailserver_api.service
 rm -rf /opt/r7-office/mailserver_api/
 cd /
-3. Разархивировать и перезапустить службу API
+```
+4. Разархивировать и перезапустить службу API
+```bash
 tar -xzvf mailserver_api_1.4.tar.gz --selinux -C /
 systemctl restart mailserver_api.service
 systemctl status mailserver_api.service
-Скачать API 1.4
-MD5: 4D13ABE87CAB42E433D36556CBD4AC2C
+```
+[Скачать API 1.4](https://download.r7-office.ru/mailserver/mailserver_api_1.4.tar.gz)
+<br>MD5: 4D13ABE87CAB42E433D36556CBD4AC2C
