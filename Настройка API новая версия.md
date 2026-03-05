@@ -176,6 +176,8 @@ journalctl -u r7-mail-manager -n 200 --no-pager
 nginx -t
 systemctl reload nginx
 ```
+<img width="1225" height="1123" alt="image" src="https://github.com/user-attachments/assets/49289dd7-53cc-48b6-924f-10462802a295" />
+
 Проверка backend через nginx:
 ###### NGINX
 ```bash
@@ -185,6 +187,8 @@ curl -k https://<HOST>/mail-manager/api/info
 открыть ``админ-панель``<br>
 перейти в ``Settings / Настройки``<br>
 должна появиться вкладка ``Почта / Mail``<br>
+<img width="1314" height="488" alt="image" src="https://github.com/user-attachments/assets/1a65408a-0391-432d-b4c3-5647711dcb5d" />
+
 4.3. Восстановление после обновления основного ПО (guard)<br>
 Проблема: после обновления (установки патчей) могут пропасть:
 ```bash
@@ -195,11 +199,39 @@ nginx-блоки в /etc/nginx/sites-available/admin
 >[!Note]
 >Решение: guard-скрипт лежит в /opt/r7-mail-manager/ensure-admin-assets.sh и запускается на каждый старт/рестарт сервиса (через ExecStart
 Pre):<br>
-проверяет целостность nginx-блока # BEGIN R7_MAIL_MANAGER ... # END R7_MAIL_MANAGER<br>
-проверяет index.html и наличие inject-*.js<br>
-восстанавливает из /opt/r7-mail-manager/backup/<br>
-
-
-
-
+- проверяет целостность nginx-блока # BEGIN R7_MAIL_MANAGER ... # END R7_MAIL_MANAGER<br>
+- проверяет index.html и наличие inject-*.js<br>
+- восстанавливает из /opt/r7-mail-manager/backup/<br>
+Если после обновления что-то пропало — достаточно:
+```bash
+sudo systemctl restart r7-mail-manager
+```
+При необходимости можно запустить guard вручную:
+```bash
+sudo /opt/r7-mail-manager/ensure-admin-assets.sh
+```
+4.4. Удаление
+```bash
+sudo ./r7-mail-manager-install.sh
+```
+В меню выбрать “Удалить” — удалит сервис, env, backend-директорию, nginx-блок, и уберёт подключение вкладки из админки.<br>
+Во время удаления:<br>
+- сервис останавливается и удаляется
+- backend-каталоги очищаются
+- nginx-патчи удаляются<br>
+будет задан вопрос:<br>
+Удалять ли inject-manager.js?<br>
+Это важно, если установлены другие плагины.<br>
+#### 5. Что именно меняется в системе (для аудита)
+Создаётся/изменяется:
+```bash
+/opt/r7-mail-manager/ (backend + venv + guard + backup/)
+/etc/r7-mail-manager.env (0600, секреты)
+/etc/systemd/system/r7-mail-manager.service
+/etc/nginx/sites-available/admin (добавляется блок между маркерами)
+/etc/nginx/auth.basic (для BasicAuth на /apimail)
+/var/www/r7-office/admin/assets/inject-manager.js
+/var/www/r7-office/admin/assets/inject-mail-tab.js
+/var/www/r7-office/admin/index.html (добавляются <script>)
+```
 
