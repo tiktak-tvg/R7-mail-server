@@ -220,8 +220,10 @@ sudo ./r7-mail-manager-install.sh
 - backend-каталоги очищаются
 - nginx-патчи удаляются<br>
 будет задан вопрос:<br>
-Удалять ли inject-manager.js?<br>
+**Удалять ли inject-manager.js?** <br>
 Это важно, если установлены другие плагины.<br>
+<img width="1224" height="847" alt="image" src="https://github.com/user-attachments/assets/c53c34e7-07e3-49bb-b594-87244ba13d25" />
+
 #### 5. Что именно меняется в системе (для аудита)
 Создаётся/изменяется:
 ```bash
