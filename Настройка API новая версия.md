@@ -29,7 +29,7 @@ systemctl stop mailserver_api.service
 rm -rf /opt/r7-office/mailserver_api/
 cd /
 ```
-4. Разархивировать и перезапустить службу API
+3. Разархивировать и перезапустить службу API
 ```bash
 tar -xzvf mailserver_api_1.4.tar.gz --selinux -C /
 systemctl restart mailserver_api.service
@@ -120,7 +120,7 @@ IP почтового сервера (можно текущую ВМ, если m
 порт mailserver_api (по умолчанию 8084)
 JWT токен супер-администратора (обычно берётся из /opt/r7-office/mailserver_api/jwt_token)
 ```
-4) Запуск скрипта<br>
+##### 4) Запуск скрипта<br>
 4.1. Установка<br>
 ```bash
 unzip plugin-mail-astra174.zip -d plugin-mail-astra174 && cd plugin-mail-astra174
@@ -167,4 +167,39 @@ sudo ./r7-mail-manager-install.sh
 ``cat /var/log/r7-mail-manager-install.log`` или так ``nano /var/log/r7-mail-manager-install.log``
 
 <img width="1222" height="1204" alt="image" src="https://github.com/user-attachments/assets/2c35e7f2-7882-405b-bd28-9da71368007c" />
+
+4.2. Проверка после установки<br>
+###### LDAP
+```bash
+systemctl status r7-mail-manager --no-pager
+journalctl -u r7-mail-manager -n 200 --no-pager
+nginx -t
+systemctl reload nginx
+```
+Проверка backend через nginx:
+###### NGINX
+```bash
+curl -k https://<HOST>/mail-manager/api/info
+```
+Проверка UI:<br>
+открыть ``админ-панель``<br>
+перейти в ``Settings / Настройки``<br>
+должна появиться вкладка ``Почта / Mail``<br>
+4.3. Восстановление после обновления основного ПО (guard)<br>
+Проблема: после обновления (установки патчей) могут пропасть:
+```bash
+nginx-блоки в /etc/nginx/sites-available/admin
+<script> в /var/www/r7-office/admin/index.html
+файлы в /var/www/r7-office/admin/assets/
+```
+>[!Note]
+>Решение: guard-скрипт лежит в /opt/r7-mail-manager/ensure-admin-assets.sh и запускается на каждый старт/рестарт сервиса (через ExecStart
+Pre):<br>
+проверяет целостность nginx-блока # BEGIN R7_MAIL_MANAGER ... # END R7_MAIL_MANAGER<br>
+проверяет index.html и наличие inject-*.js<br>
+восстанавливает из /opt/r7-mail-manager/backup/<br>
+
+
+
+
 
