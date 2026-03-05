@@ -138,8 +138,29 @@ sudo ./r7-mail-manager-install.sh
 
 <img width="1226" height="415" alt="image" src="https://github.com/user-attachments/assets/33bf86ee-6227-47c2-ba8b-dbb4a656d7df" />
 
-Следующим шагом скрипт запрашивает IP почтового сервера. Если почта установлена локально, то по умолчанию используется 127.0.0.1 Просто нажимаем Enter
+Следующим шагом скрипт запрашивает IP почтового сервера. Если почта установлена локально, то по умолчанию используется ``127.0.0.1``. Просто нажимаем ``Enter``
 
-<img width="1226" height="415" alt="image" src="https://github.com/user-attachments/assets/bd74128c-986c-4646-9566-e30219dad994" />
+<img width="1227" height="339" alt="image" src="https://github.com/user-attachments/assets/8b6b1b03-4ed4-4d79-a927-136553a5cf27" />
+
+Следующий шаг предлагает выбрать порт для сервиса плагина. При выборе порта происходит проверка на его занятость и при недоступности попросит
+выбрать другой порт. Просто нажимаем ``Enter``
+
+На следующем шаге требуется установить пароль пользователя admin в htpasswd, от которого будут поступать API запросы.
+
+<img width="1226" height="146" alt="image" src="https://github.com/user-attachments/assets/11d9f88d-fa7f-4837-9796-211fe6267ea1" />
+
+Далее будет установка, проверены все необходимые установленные пакет и зависимости.
+
+<img width="1225" height="790" alt="image" src="https://github.com/user-attachments/assets/b2db1171-f352-4fe5-aa8b-7e81f0eef561" />
+
+После установщик ищет JWT токен (если не будет найден, то попросит его ввести в ручную), устанавливает зависимости, копирует файлы в нужные
+директории и вносит изменения.
+В конце установки появится справочная информация
+
+<img width="1227" height="686" alt="image" src="https://github.com/user-attachments/assets/f4082721-57dc-4944-8676-dd5d98469285" />
+
+Проверим статус
+
+<img width="1225" height="497" alt="image" src="https://github.com/user-attachments/assets/c1e1457a-8655-49ff-9b80-26a1ed6f2390" />
 
 
