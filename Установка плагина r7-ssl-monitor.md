@@ -56,7 +56,7 @@ Backend-плагин написан на Node.js;
 ```
 >[!Warning]
 > - Установщик пытается установить nodejs сам, но в офлайне рекомендуется установить заранее системным пакетом
-> - Во избежании ошибок, можено сразу установить ``apt install nodejs``
+> - Во избежании ошибок, можете сразу установить ``apt install nodejs``
 
 
 Дополнительно (обычно уже есть в системе, но важно):
@@ -146,14 +146,106 @@ nginx config: /etc/nginx/sites-available/admin
 
 #### 4. Запуск скрипта
 4.1. Установка
+```bash
+unzip Plugin-ssl.zip -d r7-ssl-monitor && cd r7-ssl-monitor
+chmod +x r7-ssl-install.sh
+sudo ./r7-ssl-install.sh
+```
+Запуск сразу указывает на ключ —info для получения описания скрипта и предлагает сменить пароль, если предлагаемый порт занят или выбрать по умолчанию: <br>
+если ставите впервые, можно без ввода сразу нажать Enter, далее происходит установка и вывод конечного результата:
 
+<img width="1216" height="635" alt="image" src="https://github.com/user-attachments/assets/301cea85-622e-4e51-978b-955e445ec245" />
 
+Во время установки:<br>
+- Скрипт требует root;<br>
+- Запрашивает порт(ы);<br>
+- Проверяет, свободны ли они;<br>
+- При конфликте предлагает выбрать другой;<br>
+- Выполняет установку;<br>
+- Выводит финальный статус.<br>
+4.2. Повторный запуск<br>
+При повторном запуске:<br>
+- Выполняется обновление;<br>
+- Существующие файлы корректно перезаписываются;<br>
+- inject-manager.js не дублируется;<br>
+- Порядок инжектов сохраняется;<br>
+- Порты придётся сменить.<br>
+<img width="1222" height="95" alt="image" src="https://github.com/user-attachments/assets/d20f0817-d7da-4f91-ab42-aa71354e037b" />
 
+4.3. Проверка после установки
+```bash
+systemctl status r7-ssl-status r7-ssl-change --no-pager
+journalctl -u r7-ssl-status -n 200 --no-pager
+nginx -t
+systemctl reload nginx
+```
+<img width="1222" height="911" alt="image" src="https://github.com/user-attachments/assets/950e3b52-4932-469f-9fa1-0f7861d520a1" />
 
+4.4. Удаление
+##### SSL:
+```bash
+sudo ./r7-ssl-install.sh --uninstall
+```
+Во время удаления:<br>
+- Сервис останавливается и удаляется;<br>
+- Backend-каталоги очищаются;<br>
+- Nginx-патчи удаляются.<br>
+- Будет задан вопрос:<br>
+>[!Warning]
+>- Удалять ли inject-manager.js? выбираем N . Это важно, если установлены другие плагины.
 
-
-
-
+#### 5. Порядок работы скрипта (последовательность)
+**Установка:** <br>
+- Проверка прав root;<br>
+- Проверка / запрос портов;<br>
+- Проверка занятости портов (ss);<br>
+- Проверка Node.js (установка при необходимости)<br>
+- Проверка структуры файлов;<br>
+- Копирование backend в /opt/...<br>
+- Создание systemd-unit’ов (inline);<br>
+- systemctl daemon-reload;<br>
+- Включение и запуск сервисов;<br>
+- Копирование JS в assets;<br>
+- Патч index.html(manager → plugin-инжекты)<br>
+- Патч nginx (location + websocket);<br>
+- nginx -t и reload;<br>
+- Финальный отчёт и статус сервисов.<br>
+#### 6. Как работают плагины (архитектура)
+6.1. Общая схема<br>
+- Пользователь работает только через админку R7 Office.<br>
+**Админка:** <br>
+- Загружает JS-инжекты;<br>
+- Отправляет HTTP / WS-запросы.<br>
+**nginx:** <br>
+- Проксирует запросы на localhost.<br>
+**backend:** <br>
+- Обрабатывает API;<br>
+- Отдаёт данные интерфейсу.<br>
+6.2. inject-manager.js<br>
+- Общий менеджер вкладок / карточек;<br>
+- Подключается один раз.<br>
+**Все плагины:** <br>
+- Вставляются ниже него;<br>
+- Не дублируют его установку.<br>
+6.3. SSL Monitor<br>
+**backend:**
+```bash
+ssl-status.js
+ssl-change.js
+```
+**UI:** <br>
+Вкладка SSL<br>
+- nginx проксирует: /ssl-status /ssl-change
+#### 7. Что именно меняется в системе (для аудита)
+Установка затрагивает:
+```bash
+/opt/r7-ssl-status/*
+/etc/systemd/system/*.service
+/etc/nginx/sites-available/admin
+/var/www/r7-office/admin/assets/*.js
+/var/www/r7-office/admin/index.html
+```
+Для критичных файлов создаются .bak-копии.
 
 
 
