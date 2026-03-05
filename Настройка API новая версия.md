@@ -132,7 +132,14 @@ sudo ./r7-mail-manager-install.sh
 >Запуск показывает меню, в котором можно Установить/обновить плагин, Переустановить, Удалить, посмотреть статус (если плагин установлен) и выйти из
 режима установки
 
+<img width="1228" height="562" alt="image" src="https://github.com/user-attachments/assets/5a8d84c2-3788-4a18-9091-f681b109fe63" />
 
+Далее выбираем онлайн или оффлайн установку (при оффлайн установке пакеты ставятся автоматически из pkg/)
 
+<img width="1226" height="415" alt="image" src="https://github.com/user-attachments/assets/33bf86ee-6227-47c2-ba8b-dbb4a656d7df" />
+
+Следующим шагом скрипт запрашивает IP почтового сервера. Если почта установлена локально, то по умолчанию используется 127.0.0.1 Просто нажимаем Enter
+
+<img width="1226" height="415" alt="image" src="https://github.com/user-attachments/assets/bd74128c-986c-4646-9566-e30219dad994" />
 
 
