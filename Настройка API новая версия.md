@@ -32,9 +32,17 @@ cd /
 3. Разархивировать и перезапустить службу API
 ```bash
 tar -xzvf mailserver_api_1.4.tar.gz --selinux -C /
+```
+
+<img width="1225" height="255" alt="image" src="https://github.com/user-attachments/assets/101bffb9-4c21-4ecd-a57a-19bb4afea4a7" />
+
+```bash
 systemctl restart mailserver_api.service
 systemctl status mailserver_api.service
 ```
+
+<img width="1224" height="234" alt="image" src="https://github.com/user-attachments/assets/753a68e3-7b36-46d9-b455-6f9bd868f250" />
+
 [Скачать API 1.4](https://download.r7-office.ru/mailserver/mailserver_api_1.4.tar.gz)
 <br>MD5: 4D13ABE87CAB42E433D36556CBD4AC2C
 
@@ -57,6 +65,8 @@ apt install python3 python3-venv python3-dev python3-pip python3-setuptools pyth
 apt install build-essential
 apt install libffi-dev libssl-dev
 ```
+<img width="1224" height="303" alt="image" src="https://github.com/user-attachments/assets/0f3f6d10-b6a7-4d88-b7b8-3b9f4f27b849" />
+
 1.1.2. Системные компоненты, которые должны быть в системе<br>
 Обычно уже присутствуют на сервере Р7, но без них работа невозможна:<br>
 ```cmd
@@ -101,6 +111,12 @@ pkg/ -
 ```
 > inject-manager.js копируется только если его ещё нет и используется всеми плагинами совместно
 
+<img width="1220" height="138" alt="image" src="https://github.com/user-attachments/assets/3cc73b87-8700-485d-ab26-a72d9e952238" />
+
+или более подробно
+
+<img width="1225" height="1254" alt="image" src="https://github.com/user-attachments/assets/953ce800-f4d9-4b26-8a51-dbda18041a56" />
+
 3.2. Проверить ожидаемые пути<br>
 Скрипты жёстко рассчитывают на следующие пути:<br>
 ```bash
@@ -113,6 +129,8 @@ nginx config:
 ```
 Если у вас нестандартная установка — требуется адаптация скрипта.
 
+<img width="1221" height="426" alt="image" src="https://github.com/user-attachments/assets/0718672e-81d5-4468-80c9-50e2a5b12751" />
+
 3.3. Подготовить доступ к mailserver_api<br>
 Понадобится:<br>
 ```txt
@@ -120,6 +138,9 @@ IP почтового сервера (можно текущую ВМ, если m
 порт mailserver_api (по умолчанию 8084)
 JWT токен супер-администратора (обычно берётся из /opt/r7-office/mailserver_api/jwt_token)
 ```
+
+<img width="1229" height="161" alt="image" src="https://github.com/user-attachments/assets/e1060717-ad4c-4020-a1af-fd2e570b213a" />
+
 ##### 4) Запуск скрипта<br>
 4.1. Установка<br>
 ```bash
