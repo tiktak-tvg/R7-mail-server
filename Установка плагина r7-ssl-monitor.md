@@ -9,3 +9,6 @@
 
 <img width="1296" height="367" alt="image" src="https://github.com/user-attachments/assets/fb929b91-8b54-453a-ac44-9753ee7320e5" />
 
+Возможность добавить сертификат (.crt) и ключ (.key) с диска устройства, которое используется:
+
+<img width="1313" height="196" alt="image" src="https://github.com/user-attachments/assets/58200140-f31d-4d22-b0e1-eb602536755e" />
