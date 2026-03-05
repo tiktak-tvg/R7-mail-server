@@ -163,4 +163,7 @@ sudo ./r7-mail-manager-install.sh
 
 <img width="1225" height="497" alt="image" src="https://github.com/user-attachments/assets/c1e1457a-8655-49ff-9b80-26a1ed6f2390" />
 
+В файле можно просмотреть за всё время все установки которые были выполнены
+
+<img width="1222" height="1204" alt="image" src="https://github.com/user-attachments/assets/2c35e7f2-7882-405b-bd28-9da71368007c" />
 
