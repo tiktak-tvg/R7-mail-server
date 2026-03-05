@@ -210,6 +210,10 @@ curl -k https://<HOST>/mail-manager/api/info
 должна появиться вкладка ``Почта / Mail``<br>
 <img width="1314" height="488" alt="image" src="https://github.com/user-attachments/assets/1a65408a-0391-432d-b4c3-5647711dcb5d" />
 
+<img width="1422" height="516" alt="33" src="https://github.com/user-attachments/assets/f0a908cf-aaf8-47a5-898c-be3eff29b63b" />
+
+<img width="1892" height="494" alt="image" src="https://github.com/user-attachments/assets/1d643e77-f3a7-48a8-a49f-594da2726c1e" />
+
 4.3. Восстановление после обновления основного ПО (guard)<br>
 Проблема: после обновления (установки патчей) могут пропасть:
 ```bash
