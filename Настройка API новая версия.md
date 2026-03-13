@@ -58,12 +58,15 @@ systemctl status mailserver_api.service
 Установить заранее (или доверить установщику):<br>
 ```bash
 apt update
+apt install nodejs
 apt install apache2-utils
 apt install curl ca-certificates
 apt install perl
 apt install python3 python3-venv python3-dev python3-pip python3-setuptools python3-wheel
 apt install build-essential
 apt install libffi-dev libssl-dev
+или так
+apt install nodejs apache2-utils curl ca-certificates perl python3 python3-venv python3-dev python3-pip python3-setuptools python3-wheel build-essential libffi-dev libssl-dev
 ```
 <img width="1224" height="303" alt="image" src="https://github.com/user-attachments/assets/0f3f6d10-b6a7-4d88-b7b8-3b9f4f27b849" />
 
